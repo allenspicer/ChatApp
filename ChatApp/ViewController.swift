@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
+    
+    let ref = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+    
+    ref.setValue("Hello There Firebase")
+    
+    
     }
 
     override func didReceiveMemoryWarning() {
