@@ -10,6 +10,13 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController {
+    @IBAction func button(sender: UIButton) {
+        ref.setValue(textfield.text!)
+    }
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var textfield: UITextField!
+    
+    
     
     let ref = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/")
 
@@ -17,7 +24,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     
-    ref.setValue("Hello There Firebase")
+    ref.setValue("Wahoo!")
+        ref.observeEventType(.Value, withBlock: {snapshot in
+            let message = snapshot.value as! String
+            self.label.text = message
+            
+            
+        })
     
     
     }
