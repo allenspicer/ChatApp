@@ -56,14 +56,9 @@
 		9FE757CE1CFB842100629CEC = {
 			isa = PBXGroup;
 			children = (
-				9FE757F61CFB896D00629CEC /* SystemConfiguration.framework */,
-				9FE757F41CFB896000629CEC /* Security.framework */,
-				9FE757F21CFB895400629CEC /* CFNetwork.framework */,
-				9FE757F01CFB893A00629CEC /* libc++.tbd */,
-				9FE757EE1CFB892800629CEC /* libicucore.tbd */,
+				9FE757F81CFCEBBA00629CEC /* Firebase */,
 				9FE757D91CFB842200629CEC /* ChatApp */,
 				9FE757D81CFB842100629CEC /* Products */,
-				9FE757EC1CFB883600629CEC /* Firebase.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +81,19 @@
 				9FE757E61CFB842200629CEC /* Info.plist */,
 			);
 			path = ChatApp;
+			sourceTree = "<group>";
+		};
+		9FE757F81CFCEBBA00629CEC /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				9FE757EE1CFB892800629CEC /* libicucore.tbd */,
+				9FE757F01CFB893A00629CEC /* libc++.tbd */,
+				9FE757EC1CFB883600629CEC /* Firebase.framework */,
+				9FE757F61CFB896D00629CEC /* SystemConfiguration.framework */,
+				9FE757F41CFB896000629CEC /* Security.framework */,
+				9FE757F21CFB895400629CEC /* CFNetwork.framework */,
+			);
+			name = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
