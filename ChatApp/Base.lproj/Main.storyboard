@@ -38,6 +38,13 @@
                                     <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HM3-RT-GhN"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nj3-5S-OjQ">
+                                <rect key="frame" x="0.0" y="279" width="600" height="321"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -46,16 +53,22 @@
                             <constraint firstItem="Dnb-0F-gkl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9fX-QG-Ofp"/>
                             <constraint firstItem="wPR-8n-dQn" firstAttribute="top" secondItem="Lz9-lU-zyi" secondAttribute="bottom" constant="28" id="HPc-jZ-TJz"/>
                             <constraint firstItem="Dnb-0F-gkl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="121" id="axT-EZ-kbu"/>
+                            <constraint firstItem="nj3-5S-OjQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fwz-JV-zNz"/>
+                            <constraint firstItem="nj3-5S-OjQ" firstAttribute="centerX" secondItem="wPR-8n-dQn" secondAttribute="centerX" id="kKw-30-DLl"/>
+                            <constraint firstItem="nj3-5S-OjQ" firstAttribute="top" secondItem="wPR-8n-dQn" secondAttribute="bottom" constant="8" symbolic="YES" id="lgz-Ou-fEH"/>
                             <constraint firstItem="Lz9-lU-zyi" firstAttribute="centerX" secondItem="wPR-8n-dQn" secondAttribute="centerX" id="rUB-Cs-n9M"/>
+                            <constraint firstItem="nj3-5S-OjQ" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="xJM-QW-Gcf"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="Lz9-lU-zyi" id="XOb-ae-ltl"/>
+                        <outlet property="textView" destination="nj3-5S-OjQ" id="aAg-d4-vOa"/>
                         <outlet property="textfield" destination="Dnb-0F-gkl" id="m5g-iQ-vha"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="288" y="136"/>
         </scene>
     </scenes>
 </document>

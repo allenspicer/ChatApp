@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController {
+    
     @IBAction func button(sender: UIButton) {
         
         //set a value to firebase
@@ -17,11 +18,10 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textfield: UITextField!
+    @IBOutlet weak var textView: UITextView!
     
     
-    
-    let ref = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/")
-
+    let ref = Firebase(url: "https://spicerwhisper-59eee.firebaseio.com/league/team/name")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,10 +37,15 @@ class ViewController: UIViewController {
 //        })
         
         ref.observeEventType(.Value, withBlock:{snapshot in
-            let countOfChildren = snapshot.childrenCount
-            self.label.text = String(countOfChildren)})
+        print(snapshot.value)
+            }, withCancelBlock: { error in
+                print(error.description)
         
-    
+        })
+
+           
+
+        
     
     }
 
